@@ -2604,7 +2604,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #ffee00;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2818,7 +2818,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #dd6342;
-			color: #c8ece9;
+			color: #ffffff;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2850,7 +2850,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 label {
@@ -2876,7 +2876,7 @@ input, select, textarea {
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: #ffffff;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
