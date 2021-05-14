@@ -27,10 +27,13 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="#intro">Introduction</a></li>
-											<li><a href="elements.html">More about data?</a></li>
-											<li><a href="#">We can also</a></li>
-											<li><a href="#">skip having menu</a></li>
+											<li><a href="#intro">Motivation</a></li>
+											<li><a href="#overview">Project overview</a></li>
+											<li><a href="#datasets">Datasets</a></li>
+											<li><a href="#basicstats">Basic statistics</a></li>
+											<li><a href="#heat">Heatmap</a></li>
+											<li><a href="#superbokeh">??</a></li>
+											<li><a href="#links">Additional links</a></li>
 										</ul>
 									</div>
 								</li>
@@ -44,9 +47,6 @@
 							<h2>Fires in London</h2>
 							<p>Investigating London Fire Brigade<br />
 							incident records</p>
-							<!--<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>-->
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
@@ -55,7 +55,7 @@
 					<section id="#intro" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Introduction</h2>
+								<h2>Motivation</h2>
 								<p><a href="https://www.london-fire.gov.uk/about-us/">London Fire Brigade</a> is London's fire and rescue service and one of the largest <br>
 									firefighting and rescue organisations in the world. Being that, they are <br> 
 									a very important organisation and are always very, very busy in aiding Londoners. <br>
@@ -64,11 +64,6 @@
 									We are going to.........
 								</p>
 							</header>
-							<!--<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>-->
 						</div>
 					</section>
 
@@ -89,7 +84,7 @@
 					</section>		
 
 				<!-- Datasets -->
-				<section id="three" class="wrapper style3 special">
+				<section id="#datasets" class="wrapper style3 special">
 					<div class="inner">
 						<header class="major">
 							<h2>Datasets</h2>
@@ -105,11 +100,11 @@
 								<h3>London Fire Brigade Mobilisation Records</h3>
 								<p>This dataset contains the details of every fire engine sent to an incident's scene. It contains information about the appliance used, where it was deployed from and response times. The records are from January of 2009 to February of 2021. The dataset was obtained from <a href="https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records">here</a>.</p>
 							</li>
-							<li class="icon solid fa-pound-sign"> <!--fa-building-->
+							<li class="icon solid fa-pound-sign">
 								<h3>Housing in London</h3>
 								<p>This dataset contains information about houses in London, all the way from January of 1995 to January of 2021. Average price by area, houses sold and population size are among the details provided. The dataset was obtained from <a href="https://www.kaggle.com/justinas/housing-in-london">here</a>.</p>
 							</li>
-							<li class="icon solid fa-home"> <!--fa-globe-europe-->
+							<li class="icon solid fa-home"> 
 								<h3>House ages in London</h3>
 								<p>This dataset contains the building periods of houses in London. The dataset was obtained from <a href="https://data.cdrc.ac.uk/dataset/dwelling-ages-and-prices/resource/dwelling-age-group-counts-lsoa">here</a>.</p>
 							</li>
@@ -129,8 +124,20 @@
 					</div>
 				</section>	
 
+				<!-- Basic stats -->
+				<section id="#basicstats" class="wrapper style5 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Basic statistics</h2>
+							<p> Basic statistics...
+							</p>
+						</header>
+						</ul>
+					</div>
+				</section>	
+
 				<!-- One -->
-				<section id="one" class="wrapper style1 special">
+				<!--<section id="one" class="wrapper style1 special">
 					<div class="inner">
 						<header class="major">
 							<h2>Something</h2>
@@ -148,9 +155,9 @@
 							<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
 						</ul>
 					</div>
-				</section>
+				</section>-->
 
-				<!-- Two -->
+				<!-- Heatmap -->
 				<section id="#heat" class="wrapper alt style2">
 					<section class="spotlight">
 						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/heat.html" frameborder="0" ></iframe>
@@ -161,6 +168,7 @@
 					</section>
 				</section>
 
+				<!-- Big Bokeh Plot -->
 				<section id="#superbokeh" class="wrapper style5 special"> 
 					<header class="major">
 						<h2>Super Bokeh Plot</h2>
@@ -171,12 +179,22 @@
 						<br>
 						<p> We can also add text here. 
 						</p>
-						<iframe class="image" id="scatter_price" height="500vw" src="./maps_plots/scatter_price.html" frameborder="0" ></iframe>
 					</header>
 				</section>
-				
 
-				<section id="knn_intro" class="wrapper style1 special">
+				<!-- Housing -->
+				<section id="#housing" class="wrapper alt style2">
+					<section class="spotlight">
+						<iframe class="image" id="scatter_price" height="500vw" src="./maps_plots/scatter_price.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Housing prices</h2>
+							<p>Some analysis text.</p>
+						</div>
+					</section>
+				</section>
+				
+				<!-- Machine learning -->
+				<section id="#knn_intro" class="wrapper style1 special">
 					<div class="inner">
 						<header class="major">
 							<h2>Location specific incidents predictions</h2>
@@ -185,11 +203,6 @@
 								Based on the collected data and machine learning tools, the three graphs below showcase...
 							</p>
 						</header>
-						<!--<ul class="icons major">
-							<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-							<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-							<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-						</ul>-->
 					</div>
 				</section>
 
@@ -218,36 +231,7 @@
 					</section>
 				</section>
 	
-				<!-- CTA -->
-					<!--<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>-->
-
-				<!-- Footer -->
-					<!--<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>-->
-
-				<!-- CTA -->
-				<section id="cta" class="wrapper style4">
+				<section id="#links" class="wrapper style4">
 					<div>
 						<center>
 							<p style="color: white;">
