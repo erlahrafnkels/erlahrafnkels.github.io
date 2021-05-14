@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>scatter_price</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="1336d50a-061b-4baa-96a6-726ceb9f8571" data-root-id="6828"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="7262">
+          {"5c189061-e55d-40f3-9dd9-ffc26859977e":{"roots":{"references":[{"attributes":{"tabs":[{"id":"6825"},{"id":"6827"},{"id":"6826"}]},"id":"6828","type":"Tabs"},{"attributes":{"axis":{"id":"6726"},"dimension":1,"ticker":null},"id":"6729","type":"Grid"},{"attributes":{"data_source":{"id":"6710"},"glyph":{"id":"6777"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6778"},"selection_glyph":null,"view":{"id":"6780"}},"id":"6779","type":"GlyphRenderer"},{"attributes":{},"id":"6720","type":"LinearScale"},{"attributes":{"gradient":-2.1695665362816294,"line_color":"purple","y_intercept":426943.5226984131},"id":"6785","type":"Slope"},{"attributes":{"source":{"id":"6710"}},"id":"6780","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#8934e3"},"line_alpha":{"value":0.1},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"FalseAlarm"},"y":{"field":"AvgPriceOfHouses"}},"id":"6816","type":"Scatter"},{"attributes":{},"id":"6799","type":"BasicTicker"},{"attributes":{"child":{"id":"6749"},"title":"Special service"},"id":"6826","type":"Panel"},{"attributes":{"text":"Average house prices vs. false alarm incidents"},"id":"6788","type":"Title"},{"attributes":{"source":{"id":"6710"}},"id":"6818","type":"CDSView"},{"attributes":{"background_fill_color":"#fafafa","below":[{"id":"6798"}],"center":[{"id":"6801"},{"id":"6805"},{"id":"6823"},{"id":"6824"}],"left":[{"id":"6802"}],"plot_height":450,"renderers":[{"id":"6817"}],"title":{"id":"6788"},"toolbar":{"id":"6807"},"toolbar_location":null,"x_range":{"id":"6790"},"x_scale":{"id":"6794"},"y_range":{"id":"6792"},"y_scale":{"id":"6796"}},"id":"6787","subtype":"Figure","type":"Plot"},{"attributes":{"render_mode":"css","text":"Pearson coefficient: -0.412","x":350,"x_units":"screen","y":350,"y_units":"screen"},"id":"6748","type":"Label"},{"attributes":{"data_source":{"id":"6710"},"glyph":{"id":"6815"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6816"},"selection_glyph":null,"view":{"id":"6818"}},"id":"6817","type":"GlyphRenderer"},{"attributes":{},"id":"6783","type":"NumeralTickFormatter"},{"attributes":{"gradient":13.112662324107204,"line_color":"purple","y_intercept":283482.4371859415},"id":"6823","type":"Slope"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"6730"}]},"id":"6731","type":"Toolbar"},{"attributes":{"render_mode":"css","text":"Pearson coefficient: -0.015","x":350,"x_units":"screen","y":350,"y_units":"screen"},"id":"6786","type":"Label"},{"attributes":{"data_source":{"id":"6710"},"glyph":{"id":"6739"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6740"},"selection_glyph":null,"view":{"id":"6742"}},"id":"6741","type":"GlyphRenderer"},{"attributes":{},"id":"6819","type":"NumeralTickFormatter"},{"attributes":{"child":{"id":"6711"},"title":"Fire"},"id":"6825","type":"Panel"},{"attributes":{},"id":"6781","type":"NumeralTickFormatter"},{"attributes":{},"id":"6821","type":"NumeralTickFormatter"},{"attributes":{},"id":"6794","type":"LinearScale"},{"attributes":{"render_mode":"css","text":"Pearson coefficient: 0.479","x":350,"x_units":"screen","y":350,"y_units":"screen"},"id":"6824","type":"Label"},{"attributes":{"axis_label":"False alarm incidents","formatter":{"id":"6819"},"ticker":{"id":"6799"}},"id":"6798","type":"LinearAxis"},{"attributes":{},"id":"6792","type":"DataRange1d"},{"attributes":{},"id":"6790","type":"DataRange1d"},{"attributes":{"axis_label":"Average house price [\u00a3]","formatter":{"id":"6821"},"ticker":{"id":"6803"}},"id":"6802","type":"LinearAxis"},{"attributes":{},"id":"6803","type":"BasicTicker"},{"attributes":{"axis":{"id":"6798"},"ticker":null},"id":"6801","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"6768"}]},"id":"6769","type":"Toolbar"},{"attributes":{"child":{"id":"6787"},"title":"False alarm"},"id":"6827","type":"Panel"},{"attributes":{},"id":"6796","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Borough","@ProperCase"],["Avg. house price","@AvgPriceOfHouses{(0,0)}"],["False alarms","@FalseAlarm{(0,0)}"]]},"id":"6806","type":"HoverTool"},{"attributes":{"axis":{"id":"6802"},"dimension":1,"ticker":null},"id":"6805","type":"Grid"},{"attributes":{},"id":"6761","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#8934e3"},"line_alpha":{"value":0.1},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"Fire"},"y":{"field":"AvgPriceOfHouses"}},"id":"6740","type":"Scatter"},{"attributes":{"gradient":-37.616440804806196,"line_color":"purple","y_intercept":616352.4469053437},"id":"6747","type":"Slope"},{"attributes":{},"id":"6723","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Borough","@ProperCase"],["Avg. house price","@AvgPriceOfHouses{(0,0)}"],["Special service cases","@SpecialService{(0,0)}"]]},"id":"6768","type":"HoverTool"},{"attributes":{"text":"Average house prices vs. special service incidents"},"id":"6750","type":"Title"},{"attributes":{"background_fill_color":"#fafafa","below":[{"id":"6760"}],"center":[{"id":"6763"},{"id":"6767"},{"id":"6785"},{"id":"6786"}],"left":[{"id":"6764"}],"plot_height":450,"renderers":[{"id":"6779"}],"title":{"id":"6750"},"toolbar":{"id":"6769"},"toolbar_location":null,"x_range":{"id":"6752"},"x_scale":{"id":"6756"},"y_range":{"id":"6754"},"y_scale":{"id":"6758"}},"id":"6749","subtype":"Figure","type":"Plot"},{"attributes":{"data":{"AvgPriceOfHouses":{"__ndarray__":"ZltfOR3qCUHcMnMqRLUZQQp4Uwrvow9BFy39csOTF0EBtoq0IRYVQdKsYeMtfyRBU+TofLpLI0H4h559VwURQSa+DyAULhdB6ELhh05rEkGHFcKxwSMSQQArK980kxlBkDFH5DwxI0ELU7X7Xx0aQc9pIeKEPBZBgIas95TcEEFsDXBh9ewSQefu+FTTsRNBiwGGwNoCIEFpIVO0oqgwQXGmYsbGExdB6ZtKuOZEGEF9MumExB4TQZioKxViTRhB89Wo+bU7EEFwbW4MxGkTQSXTmewbaSBBi32y1QIdGEEeIPO+vdARQZmHp49CZxVBEIeA/HVhE0EZHkvYEa4dQddVDxcn/ShB","dtype":"float64","order":"little","shape":[33]},"FalseAlarm":{"__ndarray__":"AAAAAADjs0AAAAAAgCrBQAAAAAAAqbZAAAAAAABPwEAAAAAAAIm/QAAAAACAjNhAAAAAAIB4xEAAAAAAAI3DQAAAAACApcVAAAAAAIDewUAAAAAAAFm/QAAAAACATMNAAAAAAIBowEAAAAAAAJq3QAAAAAAAxrRAAAAAAADMu0AAAAAAAIfMQAAAAACAbcBAAAAAAIC5xUAAAAAAABLCQAAAAAAA+LxAAAAAAIBYyEAAAAAAgMbBQAAAAAAA3LVAAAAAAAAXw0AAAAAAAPe4QAAAAAAAWrdAAAAAAAB4zEAAAAAAALO2QAAAAAAAjMtAAAAAAICHwEAAAAAAgG7EQAAAAAAgreNA","dtype":"float64","order":"little","shape":[33]},"Fire":{"__ndarray__":"AAAAAABauEAAAAAAAB61QAAAAAAAvbVAAAAAAAA/s0AAAAAAAGa9QAAAAAAAl7NAAAAAAADwjUAAAAAAACi7QAAAAAAAVLdAAAAAAADUuEAAAAAAAHO7QAAAAAAA3rJAAAAAAADYpUAAAAAAAFGzQAAAAAAAzKVAAAAAAAB+t0AAAAAAAHq9QAAAAAAA6LdAAAAAAACUsEAAAAAAAFifQAAAAAAADKNAAAAAAADztEAAAAAAAESzQAAAAAAApqlAAAAAAACVv0AAAAAAAG+0QAAAAAAA2KJAAAAAAABEu0AAAAAAANypQAAAAACAXcJAAAAAAAAkt0AAAAAAAIOxQAAAAAAAEcBA","dtype":"float64","order":"little","shape":[33]},"ProperCase":["Barking And Dagenham","Barnet","Bexley","Brent","Bromley","Camden","City Of London","Croydon","Ealing","Enfield","Greenwich","Hackney","Hammersmith And Fulham","Haringey","Harrow","Havering","Hillingdon","Hounslow","Islington","Kensington And Chelsea","Kingston Upon Thames","Lambeth","Lewisham","Merton","Newham","Redbridge","Richmond Upon Thames","Southwark","Sutton","Tower Hamlets","Waltham Forest","Wandsworth","Westminster"],"SpecialService":{"__ndarray__":"AAAAAAC6pkAAAAAAAO+zQAAAAAAAxKZAAAAAAAACrEAAAAAAAAizQAAAAAAAlbFAAAAAAAB8mEAAAAAAACm2QAAAAAAAuLBAAAAAAADQskAAAAAAAC2wQAAAAAAAtKpAAAAAAADwokAAAAAAAAKqQAAAAAAAnqNAAAAAAABWrEAAAAAAAMK0QAAAAAAA2qpAAAAAAAAiqUAAAAAAALKkQAAAAAAAXJ5AAAAAAAAAtEAAAAAAAKatQAAAAAAArqJAAAAAAABasEAAAAAAADCuQAAAAAAAUKBAAAAAAABkskAAAAAAAEqhQAAAAAAAabFAAAAAAAD4qUAAAAAAAISsQAAAAAAABL5A","dtype":"float64","order":"little","shape":[33]},"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]},"selected":{"id":"7055"},"selection_policy":{"id":"7054"}},"id":"6710","type":"ColumnDataSource"},{"attributes":{"source":{"id":"6710"}},"id":"6742","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#8934e3"},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"SpecialService"},"y":{"field":"AvgPriceOfHouses"}},"id":"6777","type":"Scatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"6806"}]},"id":"6807","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#8934e3"},"line_alpha":{"value":0.1},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"SpecialService"},"y":{"field":"AvgPriceOfHouses"}},"id":"6778","type":"Scatter"},{"attributes":{"background_fill_color":"#fafafa","below":[{"id":"6722"}],"center":[{"id":"6725"},{"id":"6729"},{"id":"6747"},{"id":"6748"}],"left":[{"id":"6726"}],"plot_height":450,"renderers":[{"id":"6741"}],"title":{"id":"6712"},"toolbar":{"id":"6731"},"toolbar_location":null,"x_range":{"id":"6714"},"x_scale":{"id":"6718"},"y_range":{"id":"6716"},"y_scale":{"id":"6720"}},"id":"6711","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"6754","type":"DataRange1d"},{"attributes":{"axis":{"id":"6764"},"dimension":1,"ticker":null},"id":"6767","type":"Grid"},{"attributes":{},"id":"6752","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Borough","@ProperCase"],["Avg. house price","@AvgPriceOfHouses{(0,0)}"],["Fires","@Fire{(0,0)}"]]},"id":"6730","type":"HoverTool"},{"attributes":{},"id":"7055","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#8934e3"},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"Fire"},"y":{"field":"AvgPriceOfHouses"}},"id":"6739","type":"Scatter"},{"attributes":{},"id":"6714","type":"DataRange1d"},{"attributes":{},"id":"6718","type":"LinearScale"},{"attributes":{"axis_label":"Special service incidents","formatter":{"id":"6781"},"ticker":{"id":"6761"}},"id":"6760","type":"LinearAxis"},{"attributes":{"text":"Average house prices vs. fire incidents"},"id":"6712","type":"Title"},{"attributes":{},"id":"6756","type":"LinearScale"},{"attributes":{"axis_label":"Average house price [\u00a3]","formatter":{"id":"6783"},"ticker":{"id":"6765"}},"id":"6764","type":"LinearAxis"},{"attributes":{},"id":"6727","type":"BasicTicker"},{"attributes":{},"id":"6743","type":"NumeralTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#8934e3"},"line_color":{"value":"#8934e3"},"marker":{"value":"diamond"},"size":{"units":"screen","value":14},"x":{"field":"FalseAlarm"},"y":{"field":"AvgPriceOfHouses"}},"id":"6815","type":"Scatter"},{"attributes":{},"id":"6765","type":"BasicTicker"},{"attributes":{"axis_label":"Fire incidents","formatter":{"id":"6743"},"ticker":{"id":"6723"}},"id":"6722","type":"LinearAxis"},{"attributes":{"axis":{"id":"6760"},"ticker":null},"id":"6763","type":"Grid"},{"attributes":{},"id":"6745","type":"NumeralTickFormatter"},{"attributes":{},"id":"7054","type":"UnionRenderers"},{"attributes":{},"id":"6716","type":"DataRange1d"},{"attributes":{},"id":"6758","type":"LinearScale"},{"attributes":{"axis_label":"Average house price [\u00a3]","formatter":{"id":"6745"},"ticker":{"id":"6727"}},"id":"6726","type":"LinearAxis"},{"attributes":{"axis":{"id":"6722"},"ticker":null},"id":"6725","type":"Grid"}],"root_ids":["6828"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('7262').textContent;
+                  var render_items = [{"docid":"5c189061-e55d-40f3-9dd9-ffc26859977e","root_ids":["6828"],"roots":{"6828":"1336d50a-061b-4baa-96a6-726ceb9f8571"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
