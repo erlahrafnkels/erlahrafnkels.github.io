@@ -133,8 +133,10 @@
 				<section id="basicstats" class="wrapper style5 special">
 					<div class="inner">
 						<header class="major">
-							<h2>Basic statistics of LBF</h2>
-							<p> Texttexttext </p>
+							<h2>Basic statistics of LFB</h2>
+							<p>The London Fire Briagde service is extremely busy. Unfortunately, the majority of all reported incidents are false alarms.
+								 <br /><br />The amount of reported incidents from all groups, being either a real fire, special service requirement or a false alarm, varies greatly from borough to borough though.
+								<br /><br /> Using the interactive map below, you can see exactly which boroughs have the highest and lowest counts in the three categories. Hover over a borough to see specific information.</p>
 						</header>
 						<ul class="features" style="background-color: white;">
 							<li style="background-color: white;">
@@ -143,12 +145,9 @@
 								</center>
 								</li>
 							<li style="background-color: white;">
-								<center>
-									<iframe class="image" id="basicbars" height="500vw" width="400vw" src="./images/basicstats-bars.png" frameborder="0" style="text-align: left;"></iframe>
-								</center>
-								</li>
+									<div class="image"><img src="images/basicstat-bars.png" alt="" /></div>
+							</li>
 						</ul>
-						<p>Some explanation text here</p>
 					</div>
 				</section>
 				<!--<section id="basicstats" class="wrapper style5 special">
@@ -186,10 +185,19 @@
 				<!-- Heatmap -->
 				<section id="heat" class="wrapper alt style2">
 					<section class="spotlight">
-						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/heat.html" frameborder="0" ></iframe>
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/heatmap2020.html" frameborder="0" ></iframe>
 						<div class="content">
-							<h2>Heat map on<br/>reported incidents</h2>
-							<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<h2>Heat map on all<br/>reported incidents 2020</h2>
+							<p>As earlier stated, The London Fire Brigade service is extremely busy. This first heat map is a great example of exactly that. The map displays all incidents reported in 2020.
+								It is clear, no station no matter bourough gets to sit back and relax! There's alsways need for help somewhere...</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/heatmap20210228.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Heat map on reported<br/> incidents February 28th, 2021</h2>
+							<p>This second heat map is merely a representation of one day's work. It represents the most recent reported day in the dataset, and it is certainly not the bussiest!
+								It is a bit more clear to identify busy areas on this map, with west-central london being in highest demand.</p>
 						</div>
 					</section>
 				</section>
@@ -197,13 +205,20 @@
 				<!-- Big Bokeh Plot -->
 				<section id="superbokeh" class="wrapper style5 special"> 
 					<header class="major">
-						<h2>Super Bokeh Plot</h2>
-						<p> Below is the amazing bokehplot. It might take some seconds to load.<br>
-							Wow. Add some text here.
+						<h2>Super Bokeh Plot | Temporal patterns</h2>
+						<p> Below is the interactive bokehplot. It might take some seconds to load, be patient.<br>
+							This plot displays incident specific categories in relation to selected timeframes.
+							<br /> To visalize a category type, click it off on the legend to the right.
+							<br /><br /> Try to play around with the plot yourself by changing the axes values.
+							<br /> You can see the impact of each type in relation to each other by selecting "Raw" under data manipulation.
 						</p>
 						<iframe style="text-align:center;" id="bokehPlot" height="650px" width="1000px" src="https://bokehfiredata.herokuapp.com/bokehPlot"></iframe>
 						<br>
-						<p> We can also add text here. 
+						<p> Did you notice how Fire indcident spikes in May? Why do you think that is?
+						</p>
+						<p> Did you notice how secondary fires predominantly occurs during summer season? Why do you think that is?
+						</p>
+						<p> For more interesting facts concerning temporal specific facts for the London Fire brigade service, <br /> check out the explainer notebook linked at the bottom.
 						</p>
 					</header>
 				</section>
@@ -213,8 +228,11 @@
 					<section class="spotlight">
 						<iframe class="image" id="scatter_price" height="500vw" src="./maps_plots/scatter_price.html" frameborder="0" ></iframe>
 						<div class="content">
-							<h2>Housing prices</h2>
-							<p>Some analysis text.</p>
+							<h2>Housing prices and incidents</h2>
+							<p>Quite interistingly, the average price for a house is well correlated with the reported amount of fires.
+								This makes sense, as newer more expensive buildings tend to better prepared for these types of incidents.
+								On the other hand however, these more expensive houses also report false alarms far more often. It therefore seems that cheaper areas care less about AFA systems.
+								All things considered, it seems that expensive neighboorhoods are generally safer than cheaper ones, at least in terms of fire incidents. </p>
 						</div>
 					</section>
 				</section>
@@ -249,36 +267,65 @@
 				<section id="knn_intro" class="wrapper style1 special">
 					<div class="inner">
 						<header class="major">
-							<h2>Location specific incidents predictions</h2>
-							<p>Some incidents are more likely to occur than others in specific areas.<br/>
-								Which type of incident heavily impact duration time, national cost and more.. (Include data as tooltip).<br/>
-								Based on the collected data and machine learning tools, the three graphs below showcase...
+							<h2>Location specific incident predictions</h2>
+							<p>Some incidents are more likely to occur than others in certain areas.<br/><br/>
+								Based on the collected geographical data and machine learning tools, <br />
+								it is possible to predict the most likely incident type to occur at any specific location.<br/><br/>
+								The maps below all show the most likely incident type to occur at specific longitude and lattitude values
+								<br/> within the boroughs of London.
+							</p>
+							<p>
+								Zoom in and out to gain a better of idea of where exactly you are.<br />
+								Click on a dot to see the location specific prediction.
 							</p>
 						</header>
 					</div>
 				</section>
 
 			
-				<section id="two" class="wrapper alt style2">
+				<!-- ML -->
+				<section id="ml" class="wrapper alt style2">
 					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-							<h2>Magna primis lobortis<br />
-							sed ullamcorper</h2>
-							<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/knn_IncidentGroup.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Incident groups</h2>
+							<p>
+								It is clear that both fires, special services and false alarms are reported all around London.  
+							</p>
+							<p>
+								Fires do however seem to occur more often in the north-western and south-western outskirts of London. There areas tend to be less populated and contain more green areas.
+							</p>
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-							<h2>Tortor dolore feugiat<br />
-							elementum magna</h2>
-							<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/knn_PropertyCategory.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Property categories</h2>
+							<p>As for property categories, boat related incidents tend to follow the rivers and lakes surrounding London nicely.
+								Aircraft related incidents also surrounds Londons largest airports nicely.
+								For all other places, road incidents non-surprisingly occur far more often.
+							</p>
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-							<h2>Augue eleifend aliquet<br />
-							sed condimentum</h2>
-							<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/knn_StopCodeDescription.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>False alarms: <br /> Malicius or good intend?</h2>
+							Luckily, false alarms tend to be based on good intend far more often than not. There does however seem to be a slight tendency of malicius reports around Loughton.
+						</div>
+					</section>
+					<section class="spotlight">
+						<iframe class="image" id="foliumHeat" height="500vw" src="./maps_plots/knn_SpecialServiceType.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Special Service Type</h2>
+							<p>
+							The dataset holds information regarding a wide amount of special service types.
+							By investigating RTC (Road traffic collision), Lift releases, Suicide attempts and flooding, we get this widely coloured graph.
+							RTC incidents clearly occurs much more frequently in the outskirts of the city around highways, whereas lift releases are more centered around areas with more dense populations.
+							Flooding seems to be a problem in everywhere, as does suicides.
+							</p>
+							<p>Note that all samples are balanced in this Visualization, meaning that the proportions between each type might differ in reality. For unbalanced Visualizations, see the explainer notebook.
+						</p>
 						</div>
 					</section>
 				</section>
