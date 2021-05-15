@@ -32,9 +32,10 @@
 											<li><a href="#datasets">Datasets</a></li>
 											<li><a href="#basicstats">Basic statistics</a></li>
 											<li><a href="#heat">Heatmap</a></li>
-											<li><a href="#superbokeh">??</a></li>
-											<li><a href="#housing">Housing</a></li>
-											<li><a href="#knn_into">Predictions</a></li>
+											<li><a href="#superbokeh">Super Bokeh plot</a></li>
+											<li><a href="#housing">Housing and demographics</a></li>
+											<li><a href="#response">Response times</a></li>
+											<li><a href="#knn_intro">Predictions</a></li>
 											<li><a href="#conclusions">Conclusions</a></li>
 											<li><a href="#links">Additional links</a></li>
 										</ul>
@@ -77,7 +78,8 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Project overview</h2>
-								<p> This is the the final project in the course Social Data Analysis and Visualization, taught at DTU in the spring of 2021. <br>
+								<p> This is the the final project in the course Social Data Analysis and Visualization, <br> 
+									taught at DTU in the spring of 2021. <br>
 									To get a quick overview of the project, please check out this introduction video below. <br>
 									Links to an explainer notebook and a Github repository can be found at the bottom of the page. <br>
 									You can jump between sections by clicking on MENU in the top, right corner of the page.
@@ -134,18 +136,17 @@
 					<div class="inner">
 						<header class="major">
 							<h2>Basic statistics of LFB</h2>
-							<p>The London Fire Briagde service is extremely busy. Unfortunately, the majority of all reported incidents are false alarms.
-								 <br /><br />The amount of reported incidents from all groups, being either a real fire, special service requirement or a false alarm, varies greatly from borough to borough though.
-								<br /><br /> Using the interactive map below, you can see exactly which boroughs have the highest and lowest counts in the three categories. Hover over a borough to see specific information.</p>
-						</header>
-						<div class="imgContainer">
-							<iframe class="image" id="redmap_count" height="600vw" width="600vw" src="./maps_plots/redmap_count.html" frameborder="0"></iframe>
-							<p>This is image 1</p>
-						</div>
-						<div class="imgContainer">
+							<p>The London Fire Briagde service is extremely busy. Unfortunately, the majority of all <br>
+								reported incidents are false alarms.</p>
 							<div class="image"><img src="images/basicstat-bars.png" alt="" /></div>
-							<p>This is image 2</p>
-						</div>
+							<p><br>The amount of reported incidents from all groups, being either a real fire, special service requirement <br> 
+								or a false alarm, varies greatly from borough to borough though.
+								<br /><br /> Using the interactive map below, you can see exactly which boroughs have the highest and <br>
+								lowest counts in the three categories. Hover over a borough to see specific information.</p>
+						</header>
+						<div>
+							<iframe class="image" id="redmap_count" height="600vw" width="700vw" src="./maps_plots/redmap_count.html" frameborder="0"></iframe>
+						</div>	
 					</div>	
 				</section>
 
@@ -190,44 +191,73 @@
 					</header>
 				</section>
 
-				<!-- Housing -->
+				<!-- Housing and profiles -->
 				<section id="housing" class="wrapper alt style2">
 					<section class="spotlight">
 						<iframe class="image" id="scatter_price" height="500vw" src="./maps_plots/scatter_price.html" frameborder="0" ></iframe>
 						<div class="content">
 							<h2>Housing prices and incidents</h2>
-							<p>Quite interistingly, the average price for a house is well correlated with the reported amount of fires.
+							<p>Quite interistingly, the average price for a house seems moderately correlated with the reported amount of fires.
 								This makes sense, as newer more expensive buildings tend to better prepared for these types of incidents.
-								On the other hand however, these more expensive houses also report false alarms far more often. It therefore seems that cheaper areas care less about AFA systems.
-								All things considered, it seems that expensive neighboorhoods are generally safer than cheaper ones, at least in terms of fire incidents. </p>
+								On the other hand however, these more expensive houses also seem to report false alarms far more often. It therefore seems that cheaper areas might care less about AFA systems.
+								All things considered, it seems that expensive neighboorhoods are generally safer than cheaper ones, at least in terms of fire incidents. 
+								We do note, though, that these plots have some outliers (the most expensive boroughs) so the correlations might not be mathematically significant.
+							</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<iframe class="image" id="bar_age" height="500vw" src="./maps_plots/bar_age.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Building periods and incidents</h2>
+							<p>What's most interesting in this plot is the fire ratio. It's lowest at the beginning and end of the plot. There’s also no building period data between 1940 and 1944 - right in the middle of WW2. Maybe everything was too chaotic or the information got lost during that period? We know that older buildings are more valuable in many people's eyes - there might be precautions regarding them to ensure that nothing happens to them. Then, the highest bar is in the period right after WW2. Building funds were probably not large and houses might've been worse built after that difficult time. Lastly, there is a drop in fire incidents in houses built after 2000. It's possible that this is due to better building regulations and practices in the most recent years.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<iframe class="image" id="scatter_count" height="500vw" src="./maps_plots/scatter_count.html" frameborder="0" ></iframe>
+						<div class="content">
+							<h2>Demographics and incidents</h2>
+							<p>Unsurprisingly, there is a moderate positive correlation between population density and fire incident counts. 
+							   However, there is a very surprising positive correlation fire incident counts and percentage of BAME. 
+								Furthermore, there is a negative correlation between fire counts and household income. Meaning, low income households experience more fires.
+								This begs the question, could there also be correlation between BAME % in a borough's population and its average household income? It indeed shows that there is a strong negative correlation!
+								 </p>
 						</div>
 					</section>
 				</section>
 
-				<!-- TEST FOR HOUSING -->
-				<section id="housing2" class="wrapper style5 special">
+				<!-- Response times -->
+				<section id="response" class="wrapper style5 special">
 					<div class="inner">
 						<header class="major">
-							<h2>Housing</h2>
-							<p> Texttexttext </p>
+							<h2>Fire response times</h2>
+							<p>Now we're going to look into fire response times. <br>
+							   Could there be any difference in how fast LFB responds based on different demographics? <br>
+							   How long does it take them to respond in each borough?
+							</p>
+							<div>
+								<iframe class="image" id="scatter_response" height="600vw" width="700vw" src="./maps_plots/scatter_response.html" frameborder="0"></iframe>
+							</div>
+							<p>It is clear that there is a strong correlation between the population density of each borough and the average <br> 
+								response time. This does not come as a shock since it is very likely that there are more fire stations in <br>
+								densely populated areas. <br><br>
+								It is very pleasing to see that there is a very weak correlation between a borough's ethnicity and median income,
+								to its average response time. <br><br>
+								Oddly enough, the graph shows a slight positive correlation between response time and the happiness score. 
+								</p>
 						</header>
-						<ul class="features" style="background-color: white;">
-							<li style="background-color: white;">
-								<center>
-									<h3>Prices</h3>
-									<iframe class="image" id="scatter_price" height="500vw" width="500vw" src="./maps_plots/scatter_price.html" frameborder="0" style="text-align: left;"></iframe>
-									<p>Explanation</p>
-								</center>
-								</li>
-							<li style="background-color: white;">
-								<center>
-									<h3>Building periods</h3>
-									<iframe class="image" id="scatter_price" height="500vw" width="500vw" src="./maps_plots/scatter_price.html" frameborder="0" style="text-align: left;"></iframe>
-									<p>Explanation</p>
-								</center>
-								</li>
-						</ul>
-					</div>
+						<div>
+							<iframe class="image" id="redmap_response" height="600vw" width="700vw" src="./maps_plots/redmap_response.html" frameborder="0"></iframe>
+						</div>	
+						<p>
+							The plot above shows that the response time is relatively lower for boroughs situated in the center of London. <br>
+							These are the areas that are generally highly populated which fits with the findings from the correlation plots <br>
+							with the social profile data. <br><br>
+							Although the trend differs slightly between incident categories, it seems that it is mostly the same boroughs <br> 
+							that have low response time for all the three categories. Furthermore, it is mostly the same boroughs as well <br> 
+							that have a high response time. This can be due to the location of the fire stations, either they generally <br> 
+							arrive fast or slow.
+						</p>
+					</div>	
 				</section>
 				
 				<!-- Machine learning -->
@@ -302,7 +332,11 @@
 					<div class="inner">
 						<header class="major">
 							<h2>Conclusions</h2>
-							<p>Conclusions here
+							<p>Who would have thought that a bunch of data could say so much? While analyzing the data supplied <br> 
+								by the London Fire Brigade along with additional datasets, a lot of interesting patterns and information <br> 
+								were found. Plotting this information in a visually pleasing way, showcases the amazing work of the <br>
+								London fire department as well as some interesting weird trends. For more plots and deeper analysis, visit <br> 
+								the Explainer Notebook. The link can be found at the bottom of the website, you won’t be disappointed!
 							</p>
 						</header>
 					</div>
